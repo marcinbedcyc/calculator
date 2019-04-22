@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="mainVBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainWindowController">
+   <children>
+      <TextField fx:id="resultTextField" alignment="CENTER_RIGHT" editable="false" prefHeight="120.0" style="-fx-background-color: black; -fx-text-fill: white;">
+         <font>
+            <Font name="System Bold" size="37.0" />
+         </font></TextField>
+      <GridPane VBox.vgrow="ALWAYS">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="addMemoryButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="80.0" mnemonicParsing="false" onAction="#addToMemory" style="-fx-background-color: #9E9E9E; -fx-text-fill: white; -fx-border-color: black;" text="M+" HBox.hgrow="ALWAYS" />
+                  <Button fx:id="showMemoryButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="80.0" mnemonicParsing="false" onAction="#getFromMemory" style="-fx-text-fill: white; -fx-background-color: #9E9E9E; -fx-border-color: black;" text="MR" HBox.hgrow="ALWAYS" />
+                  <Button fx:id="memoryCleanButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="80.0" mnemonicParsing="false" onAction="#cleanMemory" style="-fx-background-color: #9E9E9E; -fx-text-fill: white; -fx-border-color: black;" text="MC" HBox.hgrow="ALWAYS" />
+                  <Button fx:id="cleanButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="80.0" mnemonicParsing="false" onAction="#clean" style="-fx-background-color: #009688; -fx-text-fill: white; -fx-border-color: black;" text="C" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <children>
+                  <Button fx:id="sevenButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="80.0" mnemonicParsing="false" onAction="#putSeven" style="-fx-background-color: #E0F2F1; -fx-border-color: gray;" text="7" HBox.hgrow="ALWAYS" />
+                  <Button fx:id="eightButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="80.0" mnemonicParsing="false" onAction="#putEight" style="-fx-background-color: #E0F2F1; -fx-border-color: gray;" text="8" HBox.hgrow="ALWAYS" />
+                  <Button fx:id="nineButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="80.0" mnemonicParsing="false" onAction="#putNine" style="-fx-background-color: #E0F2F1; -fx-border-color: gray;" text="9" HBox.hgrow="ALWAYS" />
+                  <Button fx:id="equalButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="80.0" mnemonicParsing="false" onAction="#compute" style="-fx-background-color: #009688; -fx-text-fill: white; -fx-border-color: black;" text="=" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
+               <children>
+                  <Button fx:id="fourButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="80.0" mnemonicParsing="false" onAction="#putFour" style="-fx-background-color: #E0F2F1; -fx-border-color: gray;" text="4" HBox.hgrow="ALWAYS" />
+                  <Button fx:id="fiveButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="80.0" mnemonicParsing="false" onAction="#putFive" style="-fx-background-color: #E0F2F1; -fx-border-color: gray;" text="5" HBox.hgrow="ALWAYS" />
+                  <Button fx:id="sixButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="80.0" mnemonicParsing="false" onAction="#putSix" style="-fx-background-color: #E0F2F1; -fx-border-color: gray;" text="6" HBox.hgrow="ALWAYS" />
+                  <Button fx:id="plusButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="80.0" mnemonicParsing="false" onAction="#putPlus" style="-fx-text-fill: white; -fx-border-color: black; -fx-background-color: #009688;" text="+" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="3">
+               <children>
+                  <Button fx:id="oneButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="80.0" mnemonicParsing="false" onAction="#putOne" style="-fx-background-color: #E0F2F1; -fx-border-color: gray;" text="1" HBox.hgrow="ALWAYS" />
+                  <Button fx:id="twoButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="80.0" mnemonicParsing="false" onAction="#putTwo" style="-fx-background-color: #E0F2F1; -fx-border-color: gray;" text="2" HBox.hgrow="ALWAYS" />
+                  <Button fx:id="threeButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="80.0" mnemonicParsing="false" onAction="#putThree" style="-fx-background-color: #E0F2F1; -fx-border-color: gray;" text="3" HBox.hgrow="ALWAYS" />
+                  <Button fx:id="minusButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="80.0" mnemonicParsing="false" onAction="#putMinus" style="-fx-background-color: #009688; -fx-text-fill: white; -fx-border-color: black;" text="-" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="4">
+               <children>
+                  <Button fx:id="commaButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="80.0" mnemonicParsing="false" onAction="#putComma" style="-fx-background-color: #009688; -fx-border-color: black; -fx-text-fill: white;" text="," HBox.hgrow="ALWAYS" />
+                  <Button fx:id="zeroButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="80.0" mnemonicParsing="false" onAction="#putZero" style="-fx-background-color: #E0F2F1; -fx-border-color: gray;" text="0" HBox.hgrow="ALWAYS" />
+                  <Button fx:id="divideButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="80.0" mnemonicParsing="false" onAction="#putDivide" style="-fx-background-color: #009688; -fx-text-fill: white; -fx-border-color: black;" text="/" HBox.hgrow="ALWAYS" />
+                  <Button fx:id="multipleButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="80.0" mnemonicParsing="false" onAction="#putMultiple" style="-fx-background-color: #009688; -fx-text-fill: white; -fx-border-width: 1px, 0px, 1px, 0px; -fx-border-color: black;" text="*" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+   </children>
+</VBox>
