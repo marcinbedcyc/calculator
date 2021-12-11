@@ -1,4 +1,33 @@
 # Calculator
+
+### Development / Local run
+Program was written with Java 8. It is a bit deprecated and it is no recommended to run with higher version of Java because JavaFx is no longer part of Java built-it libraries. But if you have Java 8 installed you can run it:
+1. Check version of Java and Javac:
+    ```
+    java -version
+    # Correct output eg:
+    java version "1.8.0_201"
+    Java(TM) SE Runtime Environment (build 1.8.0_201-b09)
+    Java HotSpot(TM) 64-Bit Server VM (build 25.201-b09, mixed mode)
+
+    javac -version
+    # Correct output eg:
+    javac 1.8.0_201
+    ```
+1. Go into **src** directory:
+    ```
+    cd src/
+    ```
+1. Compile sources:
+    ```
+    javac Main.java
+    ```
+1. Run program:
+    ```
+    java Main
+    ```
+1. Eventually you can use InteliJ to build and run project with `calculator.iml`
+### Description
 Basic calculator created for programming lessons on studies.</br>
 Technologies used in project:
 - Java
@@ -13,7 +42,7 @@ Key's events are also implemented to make application more friendly to user:
 - backspace key deletes one char
 - Shift + backspace is equivalent C Button and it deletes all textField's content
 
- Calculator has got a little memory too and there are no equivalent keys to buttons which managment this little memory.
+ Calculator has got a little memory too and there are no equivalent keys to buttons which management this little memory.
  - M+ adds to memory
  - MR puts memory on TextField
  - MC cleans memory
@@ -21,9 +50,9 @@ Key's events are also implemented to make application more friendly to user:
 ***
 Size of appliaction after run a program:
 
-![Calculator](http://www-users.mat.umk.pl/~marcinbedcyc/images/calc.png)
+![Calculator](screenshots/calc.png)
 
 Full screen size application:
 
-![CalculatorFullSize](http://www-users.mat.umk.pl/~marcinbedcyc/images/calcFullSize.png)
+![CalculatorFullSize](screenshots/calcFullSize.png)
 
